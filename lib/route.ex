@@ -4,6 +4,6 @@ defmodule Route do
   require Weber.Route
 
   route on("GET", "/", :Photosapp.Main, :index)
-     |> resources(:Photosapp.Photos)
+     |> resources(:photos) # should map to Photosapp.Photos controller
 
 end
